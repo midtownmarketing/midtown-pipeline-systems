@@ -27,10 +27,10 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : ""
+        scrolled ? "bg-background/90 backdrop-blur-xl border-b border-border" : ""
       }`}
     >
-      <div className="container max-w-4xl mx-auto px-6 flex items-center justify-between h-16">
+      <div className="container max-w-4xl mx-auto px-6 flex items-center justify-between h-[72px]">
         <a href="/" className="font-display text-bright font-bold text-xl tracking-tight">
           Midtown<span className="text-primary">.</span>
         </a>
