@@ -17,14 +17,13 @@ const ResponseSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="section-label mb-5">Speed Advantage</p>
+          <p className="section-label mb-5">Your Advantage</p>
           <h2 className="font-display text-section md:text-[3.5rem] text-bright mb-8">
-            Speed Wins The Deal.
+            The First 5 Minutes Win the Deal.
           </h2>
           <p className="text-secondary-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            Mortgage inquiries convert highest in the first 5–10 minutes.
-            Our automation ensures immediate engagement.
-            Your call closes the gap.
+            Most brokers respond in hours. Our system responds in seconds. 
+            Automated SMS and email hit every lead instantly — so when you call, they already know your name.
           </p>
         </motion.div>
       </div>

@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "40–60", label: "Qualified Inquiries / Month" },
-  { value: "5-Min", label: "Automated SMS + Email Contact" },
-  { value: "0", label: "Shared Leads" },
-  { value: "CRM", label: "Backend Installed" },
+  { value: "40–60", label: "Qualified Leads / Month" },
+  { value: "5-Min", label: "Automated Follow-Up" },
+  { value: "100%", label: "Exclusive Leads" },
+  { value: "Full", label: "CRM Installed" },
 ];
 
 const ProofBand = () => {
   return (
-    <section className="py-16 bg-alt relative overflow-hidden border-y border-border">
+    <section className="py-16 relative overflow-hidden border-b border-border">
       <div className="relative container max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
@@ -30,15 +30,6 @@ const ProofBand = () => {
             </motion.div>
           ))}
         </div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center text-sm text-secondary-foreground mt-10"
-        >
-          Built for brokers who want control over their volume.
-        </motion.p>
       </div>
     </section>
   );

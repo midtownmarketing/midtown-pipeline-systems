@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const painPoints = [
-  "Volume fluctuates",
-  "Follow-up slips",
-  "Marketing feels unclear",
-  "Income becomes unpredictable",
+  "Your pipeline dries up without warning",
+  "Leads go cold because nobody follows up fast enough",
+  "You're spending on ads with no system behind them",
+  "Income swings month to month",
 ];
 
 const ProblemSection = () => {
@@ -20,7 +20,7 @@ const ProblemSection = () => {
         >
           <p className="section-label mb-5">The Problem</p>
           <h2 className="font-display text-section text-bright mb-10">
-            Referrals Don't Scale.
+            Hoping For Referrals Isn't a Growth Strategy.
           </h2>
 
           <div className="space-y-5 mb-10">
@@ -35,8 +35,8 @@ const ProblemSection = () => {
             ))}
           </div>
 
-          <p className="text-secondary-foreground text-lg leading-relaxed">
-            Predictable income requires predictable lead flow.
+          <p className="text-bright text-lg font-semibold leading-relaxed">
+            You don't need more leads. You need a system that turns them into closings.
           </p>
         </motion.div>
       </div>

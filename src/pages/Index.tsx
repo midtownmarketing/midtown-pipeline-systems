@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import BrokerageBar from "@/components/BrokerageBar";
 import ProofBand from "@/components/ProofBand";
-import PositioningStrip from "@/components/PositioningStrip";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ResponseSection from "@/components/ResponseSection";
@@ -17,12 +17,12 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     document.title =
-      "Midtown Marketing — Mortgage Pipeline Systems for Canadian Brokers";
+      "Midtown Marketing — Mortgage Marketing for Canadian Brokers";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) {
       meta.setAttribute(
         "content",
-        "Midtown Marketing generates qualified mortgage inquiries and installs automated follow-up systems for Canadian brokers. Structured acquisition, automated contact, and controlled growth."
+        "Midtown Marketing generates qualified mortgage leads and installs automated follow-up systems for Canadian brokers. We get you deals. It's that simple."
       );
     }
   }, []);
@@ -31,8 +31,8 @@ const Index = () => {
     <main className="bg-background text-foreground min-h-screen">
       <Navbar />
       <HeroSection />
+      <BrokerageBar />
       <ProofBand />
-      <PositioningStrip />
       <div id="problem"><ProblemSection /></div>
       <SolutionSection />
       <ResponseSection />

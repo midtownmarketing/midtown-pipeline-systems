@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const pillars = [
-  { title: "Lead Generation", desc: "Targeted Facebook & Google campaigns generating mortgage-specific inquiries.", checks: ["Multi-platform ads", "Mortgage-targeted", "Exclusive leads"] },
-  { title: "5-Minute Automated Contact", desc: "Instant SMS + email sequences that engage leads immediately.", checks: ["Instant SMS", "Email sequences", "24/7 automation"] },
-  { title: "Backend CRM Control", desc: "Structured pipeline tracking, tagging, and follow-up automation.", checks: ["Custom CRM setup", "Automated sequences", "Pipeline visibility"] },
-  { title: "Conversion Optimization", desc: "We refine messaging, targeting, and follow-up to improve appointment quality.", checks: ["A/B testing", "Audience refinement", "Quality focus"] },
+  { title: "Lead Generation", desc: "Facebook, Instagram, and Google campaigns designed to generate high-quality mortgage inquiries in your market.", checks: ["Multi-platform advertising", "Mortgage-targeted campaigns", "ROI-focused strategies"] },
+  { title: "Automated Follow-Up", desc: "Instant SMS + email sequences that engage every lead within minutes — so nothing slips through the cracks.", checks: ["5-minute automated contact", "24/7 lead engagement", "Appointment booking"] },
+  { title: "CRM & Nurturing", desc: "Custom CRM setup with long-term follow-up sequences to convert leads that aren't ready today into future closings.", checks: ["Custom pipeline setup", "Automated sequences", "Long-term nurturing"] },
+  { title: "Done-For-You Marketing", desc: "Complete marketing service including landing pages, ad creative, and full-funnel management.", checks: ["Landing pages", "Ad creative", "Full-service management"] },
 ];
 
 const SolutionSection = () => {
@@ -19,7 +19,7 @@ const SolutionSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <p className="section-label mb-5">Our Services</p>
+          <p className="section-label mb-5">What We Do</p>
           <h2 className="font-display text-section text-bright">
             How We Help Mortgage Brokers Succeed
           </h2>
@@ -51,16 +51,6 @@ const SolutionSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center text-secondary-foreground max-w-lg mx-auto leading-relaxed"
-        >
-          This isn't a campaign. It's a system installed into your brokerage.
-        </motion.p>
       </div>
     </section>
   );

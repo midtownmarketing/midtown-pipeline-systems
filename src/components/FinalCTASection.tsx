@@ -9,7 +9,6 @@ const FinalCTASection = () => {
 
   return (
     <section className="py-section relative bg-alt">
-      {/* Subtle glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px] pointer-events-none" />
       <div className="relative container max-w-3xl mx-auto px-6 text-center">
         <motion.div
@@ -19,10 +18,10 @@ const FinalCTASection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-section md:text-[3.5rem] text-bright mb-5">
-            Stop Hoping For Deals.
+            Ready to Fill Your Pipeline?
           </h2>
           <p className="text-secondary-foreground text-lg mb-12">
-            Install a predictable mortgage pipeline.
+            Book a free strategy call. We'll show you exactly how it works.
           </p>
           <Button
             variant="hero"
@@ -30,7 +29,7 @@ const FinalCTASection = () => {
             className="text-base px-12 py-6"
             onClick={scrollToForm}
           >
-            Book Strategy Call
+            Book Discovery Call
             <ArrowRight className="ml-1" />
           </Button>
         </motion.div>
