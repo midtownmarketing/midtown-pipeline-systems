@@ -21,11 +21,12 @@ const ResponseSection = () => {
           <span className="gold-line mx-auto mb-5" />
           <p className="section-label mb-5">Response Advantage</p>
           <h2 className="font-display text-section md:text-[3.5rem] font-bold text-bright mb-8">
-            Speed changes everything.
+            Speed wins the deal.
           </h2>
           <p className="text-secondary-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            Immediate SMS and email contact. You follow up within minutes.
-            Conversion compounds.
+            Mortgage inquiries convert highest in the first 5–10 minutes.
+            Our automation ensures immediate engagement.
+            Your call closes the gap.
           </p>
         </motion.div>
       </div>

@@ -8,7 +8,7 @@ const steps = [
   },
   {
     num: "02",
-    title: "Pipeline Installation",
+    title: "System Installation",
     description: "Campaigns, automation, and CRM infrastructure built and configured.",
   },
   {

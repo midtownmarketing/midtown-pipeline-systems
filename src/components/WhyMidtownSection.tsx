@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
-import { Shield, BarChart3, Lock, Eye, Users } from "lucide-react";
+import { Shield, BarChart3, Lock, Eye, Users, Zap, MapPin, Calendar } from "lucide-react";
 
 const leftColumn = [
   { icon: Shield, label: "Mortgage-only focus" },
-  { icon: Eye, label: "Transparent performance" },
   { icon: Users, label: "No shared leads" },
+  { icon: MapPin, label: "Canada-specific targeting" },
+  { icon: Lock, label: "Built for solo brokers & small teams" },
 ];
 
 const rightColumn = [
-  { icon: BarChart3, label: "Structured backend automation" },
-  { icon: Lock, label: "Month-to-month structure" },
-  { icon: Users, label: "Built for solo brokers and small teams" },
+  { icon: BarChart3, label: "Installed CRM backend" },
+  { icon: Eye, label: "Transparent performance tracking" },
+  { icon: Calendar, label: "Month-to-month structure" },
+  { icon: Zap, label: "Fast response automation" },
 ];
 
 const WhyMidtownSection = () => {

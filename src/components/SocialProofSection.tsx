@@ -32,7 +32,7 @@ const SocialProofSection = () => {
           <span className="gold-line mx-auto mb-5" />
           <p className="section-label mb-5">Social Proof</p>
           <h2 className="font-display text-section font-bold text-bright">
-            Real brokers. Real stability.
+            Real brokers. Real pipeline stability.
           </h2>
         </motion.div>
 

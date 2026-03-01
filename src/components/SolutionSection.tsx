@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const pillars = [
-  { title: "Paid Acquisition Engine", desc: "Structured campaigns across Meta and Google to generate exclusive mortgage inquiries." },
-  { title: "Automated 5-Minute Response", desc: "Instant SMS and email contact within minutes of every new inquiry." },
-  { title: "Backend CRM Control", desc: "Full pipeline visibility with structured stages and reporting." },
-  { title: "Structured Follow-Up Workflows", desc: "Automated sequences that keep leads engaged until conversion." },
+  { title: "Paid Acquisition Engine", desc: "Targeted Facebook & Google campaigns generating mortgage-specific inquiries." },
+  { title: "5-Minute Automated Contact", desc: "Instant SMS + email sequences that engage leads immediately." },
+  { title: "Backend CRM Control", desc: "Structured pipeline tracking, tagging, and follow-up automation." },
+  { title: "Conversion Optimization", desc: "We refine messaging, targeting, and follow-up to improve appointment quality." },
 ];
 
 const SolutionSection = () => {
@@ -22,7 +22,7 @@ const SolutionSection = () => {
           <span className="gold-line mx-auto mb-5" />
           <p className="section-label mb-5">The System</p>
           <h2 className="font-display text-section font-bold text-bright">
-            We install mortgage pipeline infrastructure.
+            We install mortgage growth infrastructure.
           </h2>
         </motion.div>
 
@@ -49,7 +49,7 @@ const SolutionSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center text-secondary-foreground max-w-lg mx-auto leading-relaxed"
         >
-          This isn't a campaign. It's infrastructure installed into your brokerage.
+          This isn't a campaign. It's a system installed into your brokerage.
         </motion.p>
       </div>
     </section>
