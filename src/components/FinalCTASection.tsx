@@ -3,13 +3,17 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const FinalCTASection = () => {
+  const scrollToForm = () => {
+    document.getElementById("qualify")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-32 relative">
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-15"
         style={{
           background:
-            "radial-gradient(ellipse at center, hsl(172 66% 50% / 0.15), transparent 70%)",
+            "radial-gradient(ellipse at center, hsl(38 72% 52% / 0.12), transparent 70%)",
         }}
       />
       <div className="relative container max-w-3xl mx-auto px-6 text-center">
@@ -19,45 +23,26 @@ const FinalCTASection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-bright mb-6 tracking-tight leading-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-6 tracking-tight leading-tight">
             Stop Hoping For Deals.
             <br />
             <span className="text-gradient">Start Owning Your Pipeline.</span>
           </h2>
           <p className="text-secondary-foreground text-lg mb-10 max-w-xl mx-auto">
-            Book a 30-minute strategy call. We'll audit your current pipeline
-            and show you exactly how The Midtown System would work for your
+            Apply for a strategy call. We'll audit your current pipeline and
+            show you exactly how The Midtown System would work for your
             brokerage.
           </p>
-          <Button variant="hero" size="lg" className="text-base px-10 py-6">
-            Book Strategy Call
+          <Button
+            variant="hero"
+            size="lg"
+            className="text-base px-10 py-6"
+            onClick={scrollToForm}
+          >
+            Apply Now
             <ArrowRight className="ml-1" />
           </Button>
-
-          {/* Pre-qualification */}
-          <div className="mt-12 border-t border-border pt-8 max-w-md mx-auto">
-            <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-4">
-              Come prepared with
-            </p>
-            <div className="grid grid-cols-2 gap-3 text-left">
-              {[
-                "Current monthly deal volume",
-                "Average commission per deal",
-                "Your response time to leads",
-                "Capacity for 40+ inquiries/mo",
-              ].map((item) => (
-                <p
-                  key={item}
-                  className="text-xs text-secondary-foreground flex items-start gap-2"
-                >
-                  <span className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                  {item}
-                </p>
-              ))}
-            </div>
-          </div>
-
-          <p className="text-xs font-mono text-muted-foreground mt-8">
+          <p className="text-xs font-mono text-muted-foreground mt-6">
             No commitment. No pitch deck. Just strategy.
           </p>
         </motion.div>

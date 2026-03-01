@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const PricingSection = () => {
+  const scrollToForm = () => {
+    document.getElementById("qualify")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-24 relative">
       <div className="container max-w-5xl mx-auto px-6">
@@ -14,7 +18,7 @@ const PricingSection = () => {
           className="text-center mb-16"
         >
           <p className="section-label mb-4">Investment</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
             Infrastructure, not a cost.
           </h2>
           <p className="text-secondary-foreground text-lg max-w-2xl mx-auto">
@@ -30,7 +34,6 @@ const PricingSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="max-w-2xl mx-auto"
         >
-          {/* Pricing card */}
           <div className="border-gradient rounded-lg">
             <div className="bg-card rounded-lg p-8 md:p-10">
               <p className="text-xs font-mono text-primary uppercase tracking-wider mb-6 text-center">
@@ -48,7 +51,6 @@ const PricingSection = () => {
                 </span>
               </p>
 
-              {/* Breakdown */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-center justify-between py-3 border-b border-border">
                   <div>
@@ -76,7 +78,6 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              {/* ROI math */}
               <div className="bg-muted rounded-lg p-6 mb-8">
                 <p className="text-xs font-mono text-primary uppercase tracking-wider mb-4">
                   ROI Math
@@ -108,7 +109,6 @@ const PricingSection = () => {
                 </p>
               </div>
 
-              {/* Includes */}
               <div className="space-y-2 mb-8">
                 {[
                   "Exclusive Meta + Google lead campaigns",
@@ -127,8 +127,13 @@ const PricingSection = () => {
                 ))}
               </div>
 
-              <Button variant="hero" size="lg" className="w-full text-base py-6">
-                Book Strategy Call
+              <Button
+                variant="hero"
+                size="lg"
+                className="w-full text-base py-6"
+                onClick={scrollToForm}
+              >
+                Apply for Strategy Call
                 <ArrowRight className="ml-1" />
               </Button>
             </div>

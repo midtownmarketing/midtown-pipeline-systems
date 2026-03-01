@@ -35,8 +35,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="/" className="text-bright font-semibold text-lg tracking-tight">
-          midtown<span className="text-primary">.</span>
+        <a href="/" className="font-display text-bright font-bold text-xl tracking-tight">
+          Midtown<span className="text-primary">.</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -49,8 +49,12 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <Button variant="hero" size="sm">
-            Book a Call <ArrowRight className="ml-1 w-3 h-3" />
+          <Button
+            variant="hero"
+            size="sm"
+            onClick={() => scrollTo("#qualify")}
+          >
+            Apply Now <ArrowRight className="ml-1 w-3 h-3" />
           </Button>
         </div>
 
@@ -73,8 +77,13 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <Button variant="hero" size="sm" className="w-full">
-            Book a Call
+          <Button
+            variant="hero"
+            size="sm"
+            className="w-full"
+            onClick={() => scrollTo("#qualify")}
+          >
+            Apply Now
           </Button>
         </div>
       )}
