@@ -11,16 +11,15 @@ const RiskSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <span className="gold-line mx-auto mb-5" />
-          <h2 className="font-display text-section font-bold text-bright mb-6">
-            No long-term contracts.
+          <p className="section-label mb-5">Zero Risk</p>
+          <h2 className="font-display text-section text-bright mb-6">
+            No Long-Term Contracts. Ever.
           </h2>
-          <p className="text-secondary-foreground text-lg leading-relaxed max-w-lg mx-auto mb-6">
-            Month-to-month structure. No shared leads.
-            Clear performance expectations.
+          <p className="text-secondary-foreground text-lg leading-relaxed max-w-lg mx-auto mb-4">
+            Month-to-month. No shared leads. Clear performance expectations from day one.
           </p>
-          <p className="text-sm text-muted-foreground italic">
-            We only work with brokers serious about growth.
+          <p className="text-sm text-primary font-semibold">
+            Results within your agreement, or we refund your investment.
           </p>
         </motion.div>
       </div>

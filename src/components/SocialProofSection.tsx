@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "For the first time, I know where my next deal is coming from. It's not hope anymore — it's a system.",
+    quote: "Within 3 months I had a full pipeline for the first time in my career. No more chasing referrals — leads come to me now.",
     name: "Licensed Broker",
     location: "Ontario",
   },
   {
-    quote: "We went from inconsistent referrals to a steady flow of inbound inquiries. The automation alone was worth it.",
+    quote: "The automation changed everything. I used to lose leads because I couldn't follow up fast enough. That problem is gone.",
     name: "Broker Team Lead",
     location: "Alberta",
   },
   {
-    quote: "Month-to-month, transparent, and it actually works. I wish I'd done this a year ago.",
+    quote: "I was skeptical about paying for leads. But these aren't random names — they're people actively looking for a mortgage. Completely different.",
     name: "Independent Agent",
     location: "British Columbia",
   },
@@ -31,7 +31,7 @@ const SocialProofSection = () => {
         >
           <p className="section-label mb-5">Testimonials</p>
           <h2 className="font-display text-section text-bright">
-            Real Brokers. Real Pipeline Stability.
+            Brokers Trust Us With Their Pipeline.
           </h2>
         </motion.div>
 

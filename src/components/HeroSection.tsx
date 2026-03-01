@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-[0.03]" />
-      {/* Subtle radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 container max-w-5xl mx-auto px-6 text-center">
@@ -16,19 +15,23 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary mb-8">
-            🇨🇦 Canadian Based · Mortgage Focused
+            🇨🇦 Canadian Based · Mortgage Specialized
           </p>
 
           <h1 className="font-display text-hero text-bright leading-[0.95] mb-8">
-            Build a Predictable
+            Mortgage Specialized
             <br />
-            <span className="text-gradient">Mortgage Pipeline.</span>
+            <span className="text-gradient">Marketing</span>
           </h1>
 
-          <p className="text-subhead text-secondary-foreground max-w-[600px] mx-auto mb-12 leading-relaxed">
-            We generate qualified mortgage inquiries and install automated
-            follow-up systems that turn them into booked appointments.
+          <p className="text-subhead text-secondary-foreground max-w-[600px] mx-auto mb-6 leading-relaxed">
+            Canadian based agency working with mortgage brokers across Canada. All services done in-house. We get you deals. It's that simple!
           </p>
+
+          <div className="glow-card bg-card border border-border rounded-xl px-6 py-4 max-w-lg mx-auto mb-10">
+            <p className="text-sm font-semibold text-bright uppercase tracking-wide">Performance-Guaranteed Partnerships</p>
+            <p className="text-xs text-secondary-foreground mt-1">Results within your agreement, or we refund your investment!</p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button
@@ -39,7 +42,7 @@ const HeroSection = () => {
                 document.getElementById("qualify")?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Book Strategy Call
+              Book Discovery Call
               <ArrowRight className="ml-1" />
             </Button>
             <Button
@@ -50,7 +53,7 @@ const HeroSection = () => {
                 document.getElementById("solution")?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              See How It Works
+              Learn More
               <ChevronDown className="ml-1" />
             </Button>
           </div>
