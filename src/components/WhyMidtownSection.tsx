@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 
-const painPoints = [
-  "Referrals fluctuate.",
-  "Response times slip.",
-  "Marketing feels unclear.",
+const reasons = [
+  "Mortgage-only focus",
+  "Structured backend automation",
+  "Transparent performance",
+  "Month-to-month structure",
+  "No shared leads",
 ];
 
-const ProblemSection = () => {
+const WhyMidtownSection = () => {
   return (
     <section className="py-24">
       <div className="container max-w-3xl mx-auto px-6">
@@ -16,30 +18,26 @@ const ProblemSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label mb-4">The Problem</p>
+          <p className="section-label mb-4">Why Midtown</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-bright mb-8 tracking-tight">
-            Most brokers don't control their volume.
+            Why Midtown.
           </h2>
 
-          <div className="space-y-3 mb-8">
-            {painPoints.map((point) => (
+          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-3">
+            {reasons.map((item) => (
               <p
-                key={point}
+                key={item}
                 className="text-secondary-foreground text-lg flex items-center gap-3"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                {point}
+                {item}
               </p>
             ))}
           </div>
-
-          <p className="text-secondary-foreground text-lg leading-relaxed">
-            When volume isn't predictable, income isn't either.
-          </p>
         </motion.div>
       </div>
     </section>
   );
 };
 
-export default ProblemSection;
+export default WhyMidtownSection;

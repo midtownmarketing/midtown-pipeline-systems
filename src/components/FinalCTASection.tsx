@@ -8,12 +8,12 @@ const FinalCTASection = () => {
   };
 
   return (
-    <section className="py-32 relative">
+    <section className="py-28 relative">
       <div
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-10"
         style={{
           background:
-            "radial-gradient(ellipse at center, hsl(38 72% 52% / 0.12), transparent 70%)",
+            "radial-gradient(ellipse at center, hsl(38 72% 52% / 0.1), transparent 70%)",
         }}
       />
       <div className="relative container max-w-3xl mx-auto px-6 text-center">
@@ -23,15 +23,11 @@ const FinalCTASection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-6 tracking-tight leading-tight">
-            Stop Hoping For Deals.
-            <br />
-            <span className="text-gradient">Start Owning Your Pipeline.</span>
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
+            Stop hoping for deals.
           </h2>
-          <p className="text-secondary-foreground text-lg mb-10 max-w-xl mx-auto">
-            Apply for a strategy call. We'll audit your current pipeline and
-            show you exactly how The Midtown System would work for your
-            brokerage.
+          <p className="text-secondary-foreground text-lg mb-10">
+            Install a predictable pipeline.
           </p>
           <Button
             variant="hero"
@@ -39,12 +35,9 @@ const FinalCTASection = () => {
             className="text-base px-10 py-6"
             onClick={scrollToForm}
           >
-            Apply Now
+            Book Strategy Call
             <ArrowRight className="ml-1" />
           </Button>
-          <p className="text-xs font-mono text-muted-foreground mt-6">
-            No commitment. No pitch deck. Just strategy.
-          </p>
         </motion.div>
       </div>
     </section>
