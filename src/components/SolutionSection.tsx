@@ -6,22 +6,40 @@ const pillars = [
     icon: Zap,
     step: "01",
     title: "Paid Acquisition Engine",
-    description: "Exclusive Meta + Google lead campaigns built specifically for mortgage. No shared leads. No recycled lists. Every lead is yours.",
-    features: ["Geo-targeted campaigns", "Mortgage-specific creatives", "Exclusive leads only", "Continuous A/B testing"],
+    description:
+      "Exclusive Meta + Google lead campaigns built for mortgage. Geo-targeted. Rate-focused creative. Every inquiry is yours alone — no shared leads, no recycled lists.",
+    features: [
+      "Geo-targeted campaigns",
+      "Mortgage-specific creatives",
+      "40–60 exclusive inquiries/mo",
+      "Continuous A/B testing",
+    ],
   },
   {
     icon: MessageSquare,
     step: "02",
     title: "5-Minute Automation Engine",
-    description: "The moment a lead comes in, they're contacted via SMS and email. No lead left untouched. No manual follow-up required.",
-    features: ["Instant SMS + email contact", "Multi-touch sequences", "Automated nurture flows", "Zero manual effort"],
+    description:
+      "The moment a lead submits, they receive an SMS and email within minutes. No manual effort. No leads sitting untouched. The system buys you time — you call within 5–10 minutes to close.",
+    features: [
+      "Instant SMS + email on inquiry",
+      "Multi-touch nurture sequences",
+      "80% contact rate",
+      "Broker calls within 5–10 min",
+    ],
   },
   {
     icon: BarChart3,
     step: "03",
     title: "Backend CRM Control",
-    description: "Full pipeline visibility. Know where every lead stands, track renewals, and see your numbers in real time.",
-    features: ["Pipeline dashboard", "Renewal tracking", "Automated follow-up", "Performance analytics"],
+    description:
+      "Full pipeline visibility. See every lead, every stage, every cost. Track renewals. Automate follow-up sequences. Know your numbers — always.",
+    features: [
+      "Pipeline dashboard",
+      "Renewal tracking",
+      "Automated follow-up",
+      "Performance analytics",
+    ],
   },
 ];
 
@@ -36,13 +54,13 @@ const SolutionSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label mb-4">The Solution</p>
+          <p className="section-label mb-4">The System</p>
           <h2 className="text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
             The Midtown Pipeline System
           </h2>
           <p className="text-secondary-foreground text-lg max-w-2xl mb-16">
-            Three integrated components. One predictable outcome. 
-            We install the entire system — you focus on closing.
+            Three integrated components. One predictable outcome. We install the
+            entire system — you focus on calling leads and closing deals.
           </p>
         </motion.div>
 
@@ -58,17 +76,26 @@ const SolutionSection = () => {
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-xs font-mono text-primary">{pillar.step}</span>
+                  <span className="text-xs font-mono text-primary">
+                    {pillar.step}
+                  </span>
                   <div className="mt-2 w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
                     <pillar.icon className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-bright mb-2">{pillar.title}</h3>
-                  <p className="text-secondary-foreground mb-4 leading-relaxed">{pillar.description}</p>
+                  <h3 className="text-xl font-semibold text-bright mb-2">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-secondary-foreground mb-4 leading-relaxed">
+                    {pillar.description}
+                  </p>
                   <div className="grid grid-cols-2 gap-2">
                     {pillar.features.map((feature) => (
-                      <p key={feature} className="text-sm text-muted-foreground flex items-center gap-2">
+                      <p
+                        key={feature}
+                        className="text-sm text-muted-foreground flex items-center gap-2"
+                      >
                         <span className="w-1 h-1 rounded-full bg-primary" />
                         {feature}
                       </p>
