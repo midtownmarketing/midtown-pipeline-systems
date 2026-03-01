@@ -21,7 +21,7 @@ const testimonials = [
 const SocialProofSection = () => {
   return (
     <section className="py-section">
-      <div className="container max-w-4xl mx-auto px-6">
+      <div className="container max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,10 +29,9 @@ const SocialProofSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="gold-line mx-auto mb-5" />
-          <p className="section-label mb-5">Social Proof</p>
-          <h2 className="font-display text-section font-bold text-bright">
-            Real brokers. Real pipeline stability.
+          <p className="section-label mb-5">Testimonials</p>
+          <h2 className="font-display text-section text-bright">
+            Real Brokers. Real Pipeline Stability.
           </h2>
         </motion.div>
 
@@ -44,13 +43,13 @@ const SocialProofSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glow-card bg-card rounded-lg p-8 border border-border"
+              className="glow-card bg-card rounded-xl p-8 border border-border"
             >
               <p className="text-secondary-foreground text-sm leading-relaxed mb-8 italic">
                 "{t.quote}"
               </p>
               <div className="border-t border-border pt-4">
-                <p className="text-sm font-medium text-bright">{t.name}</p>
+                <p className="text-sm font-semibold text-bright">{t.name}</p>
                 <p className="text-xs text-muted-foreground mt-0.5">{t.location}</p>
               </div>
             </motion.div>
