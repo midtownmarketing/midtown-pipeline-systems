@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,58 +6,58 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 210 20% 95%;
+    --background: 222 28% 6%;
+    --foreground: 36 20% 90%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 210 20% 95%;
+    --card: 222 24% 9%;
+    --card-foreground: 36 20% 90%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 222 24% 9%;
+    --popover-foreground: 36 20% 90%;
 
-    --primary: 172 66% 50%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 38 72% 52%;
+    --primary-foreground: 222 28% 6%;
 
-    --secondary: 220 16% 14%;
-    --secondary-foreground: 210 15% 75%;
+    --secondary: 222 20% 13%;
+    --secondary-foreground: 36 12% 68%;
 
-    --muted: 220 14% 12%;
-    --muted-foreground: 215 12% 50%;
+    --muted: 222 18% 11%;
+    --muted-foreground: 220 12% 45%;
 
-    --accent: 172 66% 50%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 38 72% 52%;
+    --accent-foreground: 222 28% 6%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 36 20% 95%;
 
-    --border: 220 14% 16%;
-    --input: 220 14% 16%;
-    --ring: 172 66% 50%;
+    --border: 222 18% 14%;
+    --input: 222 18% 14%;
+    --ring: 38 72% 52%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 18% 10%;
-    --sidebar-foreground: 210 15% 75%;
-    --sidebar-primary: 172 66% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 14% 14%;
-    --sidebar-accent-foreground: 210 15% 75%;
-    --sidebar-border: 220 14% 16%;
-    --sidebar-ring: 172 66% 50%;
+    --sidebar-background: 222 24% 9%;
+    --sidebar-foreground: 36 12% 68%;
+    --sidebar-primary: 38 72% 52%;
+    --sidebar-primary-foreground: 222 28% 6%;
+    --sidebar-accent: 222 18% 13%;
+    --sidebar-accent-foreground: 36 12% 68%;
+    --sidebar-border: 222 18% 14%;
+    --sidebar-ring: 38 72% 52%;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(172 66% 50%), hsl(190 70% 40%));
-    --gradient-surface: linear-gradient(180deg, hsl(220 18% 10%), hsl(220 20% 7%));
-    --shadow-glow: 0 0 40px hsl(172 66% 50% / 0.15);
-    --shadow-card: 0 1px 3px hsl(0 0% 0% / 0.3), 0 0 0 1px hsl(220 14% 16%);
+    --gradient-primary: linear-gradient(135deg, hsl(38 72% 52%), hsl(28 80% 45%));
+    --gradient-surface: linear-gradient(180deg, hsl(222 24% 9%), hsl(222 28% 6%));
+    --shadow-glow: 0 0 40px hsl(38 72% 52% / 0.12);
+    --shadow-card: 0 1px 3px hsl(0 0% 0% / 0.4), 0 0 0 1px hsl(222 18% 14%);
 
-    --text-dim: 215 12% 40%;
-    --text-bright: 0 0% 100%;
-    --surface-elevated: 220 16% 12%;
-    --surface-hover: 220 14% 16%;
-    --border-bright: 220 14% 22%;
-    --metric-green: 152 60% 52%;
-    --metric-blue: 210 80% 60%;
+    --text-dim: 220 12% 38%;
+    --text-bright: 36 20% 95%;
+    --surface-elevated: 222 20% 11%;
+    --surface-hover: 222 18% 15%;
+    --border-bright: 222 16% 20%;
+    --metric-green: 152 50% 48%;
+    --metric-blue: 210 60% 55%;
   }
 }
 
@@ -81,10 +81,14 @@
     background-image: var(--gradient-primary);
   }
 
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
   .grid-pattern {
     background-image: 
-      linear-gradient(hsl(220 14% 16% / 0.5) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(220 14% 16% / 0.5) 1px, transparent 1px);
+      linear-gradient(hsl(222 18% 14% / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(222 18% 14% / 0.4) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 
@@ -114,7 +118,7 @@
 
   .glow-card:hover {
     box-shadow: var(--shadow-card), var(--shadow-glow);
-    border-color: hsl(172 66% 50% / 0.3);
+    border-color: hsl(38 72% 52% / 0.25);
   }
 
   .stat-number {

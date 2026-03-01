@@ -21,7 +21,7 @@ const DifferentiatorsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="section-label mb-4">Why Midtown</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-bright mb-16 tracking-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-16 tracking-tight">
             Built different. On purpose.
           </h2>
         </motion.div>

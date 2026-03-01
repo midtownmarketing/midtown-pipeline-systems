@@ -5,9 +5,9 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 grid-pattern opacity-40" />
+      <div className="absolute inset-0 grid-pattern opacity-30" />
       <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-10 blur-[120px]"
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.07] blur-[120px]"
         style={{ background: "var(--gradient-primary)" }}
       />
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
             Midtown Marketing — Pipeline Installation for Mortgage Brokers
           </p>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-bright leading-[0.95] mb-6">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-bright leading-[0.95] mb-6">
             REFERRALS ARE
             <br />
             <span className="text-gradient">NOT A SYSTEM.</span>
@@ -41,7 +41,16 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-base px-8 py-6">
+            <Button
+              variant="hero"
+              size="lg"
+              className="text-base px-8 py-6"
+              onClick={() =>
+                document
+                  .getElementById("qualify")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Book Strategy Call
               <ArrowRight className="ml-1" />
             </Button>
@@ -61,7 +70,6 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Metrics bar */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

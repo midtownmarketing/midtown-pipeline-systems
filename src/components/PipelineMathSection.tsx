@@ -20,7 +20,7 @@ const PipelineMathSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="section-label mb-4">The Pipeline Math</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
             Conservative numbers. Real math.
           </h2>
           <p className="text-secondary-foreground text-lg max-w-2xl mb-16">

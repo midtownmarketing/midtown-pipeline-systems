@@ -41,7 +41,7 @@ const RiskCompressionSection = () => {
           className="text-center mb-16"
         >
           <p className="section-label mb-4">Risk Compression</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-bright mb-4 tracking-tight">
             Zero lock-in. Full control.
           </h2>
           <p className="text-secondary-foreground text-lg max-w-2xl mx-auto">
