@@ -9,6 +9,8 @@ const FinalCTASection = () => {
 
   return (
     <section className="py-section relative bg-alt">
+      {/* Subtle glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px] pointer-events-none" />
       <div className="relative container max-w-3xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -16,8 +18,8 @@ const FinalCTASection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-display text-section md:text-[3.5rem] font-bold text-bright mb-5">
-            Stop hoping for deals.
+          <h2 className="font-display text-section md:text-[3.5rem] text-bright mb-5">
+            Stop Hoping For Deals.
           </h2>
           <p className="text-secondary-foreground text-lg mb-12">
             Install a predictable mortgage pipeline.

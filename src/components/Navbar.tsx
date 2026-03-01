@@ -4,7 +4,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "#problem", label: "Problem" },
-  { href: "#solution", label: "System" },
+  { href: "#solution", label: "Services" },
   { href: "#why", label: "Why Midtown" },
   { href: "#process", label: "Process" },
 ];
@@ -30,8 +30,8 @@ const Navbar = () => {
         scrolled ? "bg-background/90 backdrop-blur-xl border-b border-border" : ""
       }`}
     >
-      <div className="container max-w-4xl mx-auto px-6 flex items-center justify-between h-[72px]">
-        <a href="/" className="font-display text-bright font-bold text-xl tracking-tight">
+      <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between h-[72px]">
+        <a href="/" className="font-display text-bright text-xl tracking-tight">
           Midtown<span className="text-primary">.</span>
         </a>
 
