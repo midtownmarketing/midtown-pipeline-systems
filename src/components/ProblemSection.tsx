@@ -5,22 +5,26 @@ const problems = [
   {
     icon: UserX,
     title: "Referral Dependency",
-    description: "Your pipeline depends on other people's schedules. One slow month from a partner and your income drops.",
+    description:
+      "Your pipeline depends on other people's schedules. One quiet month from a partner and your income drops with no warning.",
   },
   {
     icon: Clock,
     title: "Slow Lead Response",
-    description: "Internet leads go cold in minutes. Without instant follow-up, you're paying for leads your competitors close.",
+    description:
+      "Industry average response time is 30–60 minutes. By then, the lead has contacted 2 other brokers. Speed is the conversion multiplier you're ignoring.",
   },
   {
     icon: AlertTriangle,
     title: "No CRM Infrastructure",
-    description: "Leads in spreadsheets. No automated follow-up. No renewal tracking. Deals fall through the cracks.",
+    description:
+      "Leads in spreadsheets. No automated follow-up. No renewal tracking. You're losing deals you already paid for.",
   },
   {
     icon: Eye,
     title: "Zero Pipeline Visibility",
-    description: "You can't forecast next month. You don't know your cost per deal. You're operating blind.",
+    description:
+      "You can't forecast next month. You don't know your cost per deal. You can't optimize what you can't measure.",
   },
 ];
 
@@ -39,8 +43,9 @@ const ProblemSection = () => {
             Hope is not a growth strategy.
           </h2>
           <p className="text-secondary-foreground text-lg max-w-2xl mb-16">
-            Most mortgage brokers run their business on inconsistent referrals, 
-            manual follow-up, and guesswork. Here's what that actually costs you.
+            Most mortgage brokers run their business on inconsistent referrals,
+            manual follow-up, and zero infrastructure. The result: unpredictable
+            income and wasted opportunity.
           </p>
         </motion.div>
 
@@ -55,8 +60,12 @@ const ProblemSection = () => {
               className="glow-card bg-card rounded-lg p-6 border border-border"
             >
               <problem.icon className="w-5 h-5 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-bright mb-2">{problem.title}</h3>
-              <p className="text-secondary-foreground text-sm leading-relaxed">{problem.description}</p>
+              <h3 className="text-lg font-semibold text-bright mb-2">
+                {problem.title}
+              </h3>
+              <p className="text-secondary-foreground text-sm leading-relaxed">
+                {problem.description}
+              </p>
             </motion.div>
           ))}
         </div>
