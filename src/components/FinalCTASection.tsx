@@ -20,7 +20,7 @@ const FinalCTASection = () => {
             Stop hoping for deals.
           </h2>
           <p className="text-secondary-foreground text-lg mb-12">
-            Install a predictable pipeline.
+            Install a predictable mortgage pipeline.
           </p>
           <Button
             variant="hero"

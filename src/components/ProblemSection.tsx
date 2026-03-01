@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const painPoints = [
-  "Referrals fluctuate.",
+  "Referral flow fluctuates.",
   "Response times slip.",
-  "Marketing feels unclear.",
+  "Marketing lacks structure.",
 ];
 
 const ProblemSection = () => {
@@ -20,7 +20,7 @@ const ProblemSection = () => {
           <span className="gold-line mb-5" />
           <p className="section-label mb-5">The Problem</p>
           <h2 className="font-display text-section font-bold text-bright mb-10">
-            Most brokers don't control their volume.
+            Most mortgage brokers don't control their volume.
           </h2>
 
           <div className="space-y-5 mb-10">

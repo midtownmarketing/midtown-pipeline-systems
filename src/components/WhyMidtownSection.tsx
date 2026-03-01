@@ -10,6 +10,7 @@ const leftColumn = [
 const rightColumn = [
   { icon: BarChart3, label: "Structured backend automation" },
   { icon: Lock, label: "Month-to-month structure" },
+  { icon: Users, label: "Built for solo brokers and small teams" },
 ];
 
 const WhyMidtownSection = () => {
