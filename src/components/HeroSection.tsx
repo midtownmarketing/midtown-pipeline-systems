@@ -14,14 +14,14 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-display text-hero font-bold text-bright leading-[0.95] mb-10">
-            REFERRALS ARE
+            BUILD A PREDICTABLE
             <br />
-            <span className="text-gradient">NOT A SYSTEM.</span>
+            <span className="text-gradient">MORTGAGE PIPELINE.</span>
           </h1>
 
           <p className="text-subhead text-secondary-foreground max-w-[560px] mx-auto mb-12 leading-relaxed">
-            Build a stable inbound mortgage pipeline with structured
-            follow-up and controlled growth.
+            We generate qualified mortgage inquiries and install automated
+            follow-up systems that turn them into booked appointments.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 document.getElementById("solution")?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              How It Works
+              See How It Works
               <ChevronDown className="ml-1" />
             </Button>
           </div>

@@ -9,12 +9,18 @@ const RiskSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="border-t border-border pt-14 text-center"
+          className="text-center"
         >
-          <p className="text-secondary-foreground leading-relaxed max-w-lg mx-auto">
-            No long-term contracts. No lock-in. No hidden fees. Month-to-month
-            structure built on alignment — not obligation. If it's not working,
-            you leave.
+          <span className="gold-line mx-auto mb-5" />
+          <h2 className="font-display text-section font-bold text-bright mb-6">
+            No long-term contracts.
+          </h2>
+          <p className="text-secondary-foreground text-lg leading-relaxed max-w-lg mx-auto mb-6">
+            Month-to-month structure. No shared leads.
+            Clear performance expectations.
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            We only work with brokers serious about growth.
           </p>
         </motion.div>
       </div>

@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
 const painPoints = [
-  "Referral flow fluctuates.",
-  "Response times slip.",
-  "Marketing lacks structure.",
+  "Volume fluctuates",
+  "Follow-up slips",
+  "Marketing feels unclear",
+  "Income becomes unpredictable",
 ];
 
 const ProblemSection = () => {
@@ -20,7 +21,7 @@ const ProblemSection = () => {
           <span className="gold-line mb-5" />
           <p className="section-label mb-5">The Problem</p>
           <h2 className="font-display text-section font-bold text-bright mb-10">
-            Most mortgage brokers don't control their volume.
+            Referrals don't scale.
           </h2>
 
           <div className="space-y-5 mb-10">
@@ -36,7 +37,7 @@ const ProblemSection = () => {
           </div>
 
           <p className="text-secondary-foreground text-lg leading-relaxed">
-            When volume isn't predictable, income isn't either.
+            Predictable income requires predictable lead flow.
           </p>
         </motion.div>
       </div>

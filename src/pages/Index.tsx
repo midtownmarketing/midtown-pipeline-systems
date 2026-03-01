@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ProofBand from "@/components/ProofBand";
+import PositioningStrip from "@/components/PositioningStrip";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ResponseSection from "@/components/ResponseSection";
-import WhoSection from "@/components/WhoSection";
 import WhyMidtownSection from "@/components/WhyMidtownSection";
 import SocialProofSection from "@/components/SocialProofSection";
-import ProcessSection from "@/components/ProcessSection";
 import RiskSection from "@/components/RiskSection";
+import ProcessSection from "@/components/ProcessSection";
 import PreQualificationForm from "@/components/PreQualificationForm";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
@@ -21,7 +22,7 @@ const Index = () => {
     if (meta) {
       meta.setAttribute(
         "content",
-        "Midtown Marketing installs stable inbound pipeline systems for Canadian mortgage brokers. Structured acquisition, automated follow-up, and controlled growth."
+        "Midtown Marketing generates qualified mortgage inquiries and installs automated follow-up systems for Canadian brokers. Structured acquisition, automated contact, and controlled growth."
       );
     }
   }, []);
@@ -30,14 +31,15 @@ const Index = () => {
     <main className="bg-background text-foreground min-h-screen">
       <Navbar />
       <HeroSection />
+      <ProofBand />
+      <PositioningStrip />
       <div id="problem"><ProblemSection /></div>
       <SolutionSection />
       <ResponseSection />
-      <WhoSection />
       <div id="why"><WhyMidtownSection /></div>
       <SocialProofSection />
-      <div id="process"><ProcessSection /></div>
       <RiskSection />
+      <div id="process"><ProcessSection /></div>
       <PreQualificationForm />
       <FinalCTASection />
       <Footer />
