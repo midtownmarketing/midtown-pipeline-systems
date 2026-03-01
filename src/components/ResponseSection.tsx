@@ -23,12 +23,9 @@ const ResponseSection = () => {
           <h2 className="font-display text-section md:text-[3.5rem] font-bold text-bright mb-8">
             Speed changes everything.
           </h2>
-          <p className="text-secondary-foreground text-lg leading-relaxed max-w-xl mx-auto mb-4">
-            Automated SMS and email contact the lead within minutes of inquiry.
-            When the broker follows up quickly, conversion compounds.
-          </p>
-          <p className="text-secondary-foreground leading-relaxed max-w-xl mx-auto">
-            The system handles the first touch. You handle the conversation.
+          <p className="text-secondary-foreground text-lg leading-relaxed max-w-xl mx-auto">
+            Immediate SMS and email contact. You follow up within minutes.
+            Conversion compounds.
           </p>
         </motion.div>
       </div>

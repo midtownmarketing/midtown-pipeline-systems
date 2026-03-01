@@ -6,59 +6,60 @@
 
 @layer base {
   :root {
-    --background: 220 30% 7%;
+    --background: 220 47% 9%;
     --foreground: 36 15% 85%;
 
-    --card: 220 28% 10%;
+    --card: 222 33% 11%;
     --card-foreground: 36 15% 85%;
 
-    --popover: 220 28% 10%;
+    --popover: 222 33% 11%;
     --popover-foreground: 36 15% 85%;
 
-    --primary: 40 45% 57%;
-    --primary-foreground: 220 30% 7%;
+    --primary: 38 40% 55%;
+    --primary-foreground: 220 47% 9%;
 
-    --secondary: 220 22% 12%;
+    --secondary: 222 33% 11%;
     --secondary-foreground: 220 10% 60%;
 
-    --muted: 220 20% 10%;
+    --muted: 220 30% 10%;
     --muted-foreground: 220 10% 42%;
 
-    --accent: 40 45% 57%;
-    --accent-foreground: 220 30% 7%;
+    --accent: 38 40% 55%;
+    --accent-foreground: 220 47% 9%;
 
     --destructive: 0 60% 48%;
     --destructive-foreground: 36 15% 95%;
 
-    --border: 215 20% 22%;
-    --input: 215 20% 18%;
-    --ring: 40 45% 57%;
+    --border: 217 22% 22%;
+    --input: 217 22% 18%;
+    --ring: 38 40% 55%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 28% 10%;
+    --sidebar-background: 222 33% 11%;
     --sidebar-foreground: 220 10% 60%;
-    --sidebar-primary: 40 45% 57%;
-    --sidebar-primary-foreground: 220 30% 7%;
-    --sidebar-accent: 220 20% 12%;
+    --sidebar-primary: 38 40% 55%;
+    --sidebar-primary-foreground: 220 47% 9%;
+    --sidebar-accent: 222 33% 11%;
     --sidebar-accent-foreground: 220 10% 60%;
-    --sidebar-border: 215 20% 22%;
-    --sidebar-ring: 40 45% 57%;
+    --sidebar-border: 217 22% 22%;
+    --sidebar-ring: 38 40% 55%;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(40 45% 57%), hsl(35 50% 48%));
-    --gradient-surface: linear-gradient(180deg, hsl(220 28% 10%), hsl(220 30% 7%));
-    --shadow-glow: 0 0 60px hsl(40 45% 57% / 0.08);
-    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.3), 0 0 0 1px hsl(215 20% 16%);
-    --shadow-card-hover: 0 8px 24px hsl(0 0% 0% / 0.4), 0 0 0 1px hsl(40 45% 57% / 0.15);
+    --gradient-primary: linear-gradient(135deg, hsl(38 40% 55%), hsl(34 45% 46%));
+    --gradient-surface: linear-gradient(180deg, hsl(222 33% 11%), hsl(220 47% 9%));
+    --shadow-glow: 0 0 60px hsl(38 40% 55% / 0.06);
+    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.3), 0 0 0 1px hsl(217 22% 18%);
+    --shadow-card-hover: 0 8px 24px hsl(0 0% 0% / 0.35), 0 0 0 1px hsl(38 40% 55% / 0.12);
 
     --text-dim: 220 10% 38%;
     --text-bright: 36 12% 92%;
-    --surface-alt: 222 26% 9%;
-    --surface-elevated: 220 22% 12%;
-    --surface-hover: 220 20% 15%;
-    --border-bright: 215 18% 24%;
-    --gold-hover: 40 52% 66%;
+    --surface-alt: 222 33% 11%;
+    --surface-elevated: 222 28% 13%;
+    --surface-hover: 220 25% 16%;
+    --border-bright: 217 20% 26%;
+    --gold-hover: 40 48% 64%;
+    --authority-blue: 212 52% 25%;
   }
 }
 
@@ -88,8 +89,8 @@
 
   .grid-pattern {
     background-image: 
-      linear-gradient(hsl(215 20% 16% / 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(215 20% 16% / 0.3) 1px, transparent 1px);
+      linear-gradient(hsl(217 22% 18% / 0.25) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(217 22% 18% / 0.25) 1px, transparent 1px);
     background-size: 80px 80px;
   }
 
