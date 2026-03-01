@@ -4,10 +4,9 @@ import { ArrowRight, Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "#problem", label: "Problem" },
-  { href: "#pipeline-math", label: "Pipeline Math" },
   { href: "#solution", label: "System" },
-  { href: "#pricing", label: "Investment" },
-  { href: "#cases", label: "Case Studies" },
+  { href: "#why", label: "Why Midtown" },
+  { href: "#process", label: "Process" },
 ];
 
 const Navbar = () => {
@@ -22,19 +21,16 @@ const Navbar = () => {
 
   const scrollTo = (href: string) => {
     setMobileOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border"
-          : ""
+        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : ""
       }`}
     >
-      <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
+      <div className="container max-w-4xl mx-auto px-6 flex items-center justify-between h-16">
         <a href="/" className="font-display text-bright font-bold text-xl tracking-tight">
           Midtown<span className="text-primary">.</span>
         </a>
@@ -49,19 +45,12 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <Button
-            variant="hero"
-            size="sm"
-            onClick={() => scrollTo("#qualify")}
-          >
-            Apply Now <ArrowRight className="ml-1 w-3 h-3" />
+          <Button variant="hero" size="sm" onClick={() => scrollTo("#qualify")}>
+            Book a Call <ArrowRight className="ml-1 w-3 h-3" />
           </Button>
         </div>
 
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
+        <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
@@ -77,13 +66,8 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <Button
-            variant="hero"
-            size="sm"
-            className="w-full"
-            onClick={() => scrollTo("#qualify")}
-          >
-            Apply Now
+          <Button variant="hero" size="sm" className="w-full" onClick={() => scrollTo("#qualify")}>
+            Book a Call
           </Button>
         </div>
       )}

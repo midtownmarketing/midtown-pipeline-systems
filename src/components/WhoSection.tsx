@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
-const pillars = [
-  "Paid acquisition systems",
-  "Automated 5-minute response",
-  "Backend CRM control",
-  "Structured follow-up workflows",
+const audience = [
+  "Solo agents building their book",
+  "Small teams seeking stability",
+  "Brokers tired of referral dependence",
+  "Professionals ready for structured growth",
 ];
 
-const SolutionSection = () => {
+const WhoSection = () => {
   return (
-    <section id="solution" className="py-24 relative">
+    <section className="py-24 relative">
       <div className="absolute inset-0 grid-pattern opacity-15" />
       <div className="relative container max-w-3xl mx-auto px-6">
         <motion.div
@@ -18,13 +18,13 @@ const SolutionSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label mb-4">The Solution</p>
+          <p className="section-label mb-4">Who This Is For</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-bright mb-8 tracking-tight">
-            We install pipeline infrastructure.
+            Built for brokers who want control.
           </h2>
 
-          <div className="space-y-3 mb-10">
-            {pillars.map((item) => (
+          <div className="space-y-3">
+            {audience.map((item) => (
               <p
                 key={item}
                 className="text-secondary-foreground text-lg flex items-center gap-3"
@@ -34,16 +34,10 @@ const SolutionSection = () => {
               </p>
             ))}
           </div>
-
-          <p className="text-secondary-foreground leading-relaxed max-w-xl">
-            This isn't a campaign. It's infrastructure — acquisition, automation,
-            and backend systems installed into your brokerage for predictable,
-            repeatable growth.
-          </p>
         </motion.div>
       </div>
     </section>
   );
 };
 
-export default SolutionSection;
+export default WhoSection;

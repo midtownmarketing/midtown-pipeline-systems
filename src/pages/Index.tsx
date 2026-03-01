@@ -1,15 +1,13 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
-import PipelineMathSection from "@/components/PipelineMathSection";
-import ResponseTimeSection from "@/components/ResponseTimeSection";
 import SolutionSection from "@/components/SolutionSection";
-import ResultsSection from "@/components/ResultsSection";
-import PricingSection from "@/components/PricingSection";
-import DifferentiatorsSection from "@/components/DifferentiatorsSection";
-import CaseStudiesSection from "@/components/CaseStudiesSection";
-import SkepticSection from "@/components/SkepticSection";
-import RiskCompressionSection from "@/components/RiskCompressionSection";
+import ResponseSection from "@/components/ResponseSection";
+import WhoSection from "@/components/WhoSection";
+import WhyMidtownSection from "@/components/WhyMidtownSection";
+import SocialProofSection from "@/components/SocialProofSection";
+import ProcessSection from "@/components/ProcessSection";
+import RiskSection from "@/components/RiskSection";
 import PreQualificationForm from "@/components/PreQualificationForm";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
@@ -23,7 +21,7 @@ const Index = () => {
     if (meta) {
       meta.setAttribute(
         "content",
-        "Midtown Marketing installs predictable inbound pipeline systems for Canadian mortgage brokers. 40–60 exclusive inquiries/month. 5-minute automation. 2–4 funded deals/month. From $2,000/mo."
+        "Midtown Marketing installs stable inbound pipeline systems for Canadian mortgage brokers. Structured acquisition, automated follow-up, and controlled growth."
       );
     }
   }, []);
@@ -33,15 +31,13 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <div id="problem"><ProblemSection /></div>
-      <PipelineMathSection />
-      <div id="response-time"><ResponseTimeSection /></div>
-      <div id="solution"><SolutionSection /></div>
-      <div id="results"><ResultsSection /></div>
-      <div id="pricing"><PricingSection /></div>
-      <DifferentiatorsSection />
-      <div id="cases"><CaseStudiesSection /></div>
-      <div id="skeptic"><SkepticSection /></div>
-      <RiskCompressionSection />
+      <SolutionSection />
+      <ResponseSection />
+      <WhoSection />
+      <div id="why"><WhyMidtownSection /></div>
+      <SocialProofSection />
+      <div id="process"><ProcessSection /></div>
+      <RiskSection />
       <PreQualificationForm />
       <FinalCTASection />
       <Footer />
