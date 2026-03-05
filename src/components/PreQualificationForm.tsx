@@ -9,40 +9,19 @@ const qualifySchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Valid email required").max(255),
   phone: z.string().trim().min(1, "Phone number is required").max(20),
-  monthlyVolume: z.string().min(1, "Please select your monthly volume"),
-  avgCommission: z.string().min(1, "Please select your average commission"),
-  responseTime: z.string().min(1, "Please select your response time"),
-  inquiryCapacity: z.string().min(1, "Please select your capacity"),
+  brokerage: z.string().trim().min(1, "Brokerage name is required").max(200),
+  dealsPerMonth: z.string().min(1, "Please select your deal volume"),
+  leadSources: z.string().trim().min(1, "Please describe your current lead sources").max(500),
 });
 
 type FormData = z.infer<typeof qualifySchema>;
 
-const selectOptions = {
-  monthlyVolume: [
-    { value: "0-2", label: "0–2 deals/month" },
-    { value: "3-5", label: "3–5 deals/month" },
-    { value: "6-10", label: "6–10 deals/month" },
-    { value: "10+", label: "10+ deals/month" },
-  ],
-  avgCommission: [
-    { value: "1500-2500", label: "$1,500–$2,500" },
-    { value: "2500-4000", label: "$2,500–$4,000" },
-    { value: "4000-6000", label: "$4,000–$6,000" },
-    { value: "6000+", label: "$6,000+" },
-  ],
-  responseTime: [
-    { value: "under-5", label: "Under 5 minutes" },
-    { value: "5-15", label: "5–15 minutes" },
-    { value: "15-60", label: "15–60 minutes" },
-    { value: "60+", label: "Over 1 hour" },
-  ],
-  inquiryCapacity: [
-    { value: "yes-ready", label: "Yes — ready to handle 40+" },
-    { value: "yes-with-help", label: "Yes — may need support" },
-    { value: "not-sure", label: "Not sure yet" },
-    { value: "no", label: "No — currently at capacity" },
-  ],
-};
+const dealOptions = [
+  { value: "0-2", label: "0–2 deals / month" },
+  { value: "3-5", label: "3–5 deals / month" },
+  { value: "6-8", label: "6–8 deals / month" },
+  { value: "8+", label: "8+ deals / month" },
+];
 
 const PreQualificationForm = () => {
   const [formData, setFormData] = useState<Partial<FormData>>({});
@@ -86,8 +65,7 @@ const PreQualificationForm = () => {
               Application Received
             </h3>
             <p className="text-secondary-foreground">
-              We'll review your details and reach out within 24 hours to
-              schedule your strategy call.
+              We'll review your details and reach out within 24 hours to schedule your strategy call.
             </p>
           </motion.div>
         </div>
@@ -111,14 +89,12 @@ const PreQualificationForm = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="gold-line mx-auto mb-5" />
           <p className="section-label mb-5">Get Started</p>
           <h2 className="font-display text-section font-bold text-bright mb-4">
-            Apply for a Strategy Call
+            See If You Qualify
           </h2>
           <p className="text-secondary-foreground text-lg max-w-xl mx-auto">
-            We work with a limited number of brokers at a time. Tell us about
-            your brokerage so we can prepare a relevant pipeline plan.
+            We partner with a limited number of Ontario brokers at a time. Tell us about your practice so we can assess fit.
           </p>
         </motion.div>
 
@@ -159,89 +135,62 @@ const PreQualificationForm = () => {
               </div>
             </div>
 
-            <div>
-              <label className={labelClasses}>Phone Number</label>
-              <input
-                type="tel"
-                placeholder="(416) 555-0100"
-                className={inputClasses}
-                value={formData.phone || ""}
-                onChange={(e) => handleChange("phone", e.target.value)}
-                maxLength={20}
-              />
-              {errors.phone && <p className={errorClasses}>{errors.phone}</p>}
-            </div>
-
-            <div className="border-t border-border pt-6">
-              <p className="text-xs font-mono text-primary uppercase tracking-[0.2em] mb-5">
-                Pipeline Qualification
-              </p>
-
-              <div className="space-y-5">
-                <div>
-                  <label className={labelClasses}>Current monthly funded deal volume</label>
-                  <select
-                    className={inputClasses}
-                    value={formData.monthlyVolume || ""}
-                    onChange={(e) => handleChange("monthlyVolume", e.target.value)}
-                  >
-                    <option value="">Select your volume</option>
-                    {selectOptions.monthlyVolume.map((opt) => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
-                    ))}
-                  </select>
-                  {errors.monthlyVolume && <p className={errorClasses}>{errors.monthlyVolume}</p>}
-                </div>
-
-                <div>
-                  <label className={labelClasses}>Average commission per funded deal</label>
-                  <select
-                    className={inputClasses}
-                    value={formData.avgCommission || ""}
-                    onChange={(e) => handleChange("avgCommission", e.target.value)}
-                  >
-                    <option value="">Select your avg commission</option>
-                    {selectOptions.avgCommission.map((opt) => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
-                    ))}
-                  </select>
-                  {errors.avgCommission && <p className={errorClasses}>{errors.avgCommission}</p>}
-                </div>
-
-                <div>
-                  <label className={labelClasses}>How quickly do you currently respond to new leads?</label>
-                  <select
-                    className={inputClasses}
-                    value={formData.responseTime || ""}
-                    onChange={(e) => handleChange("responseTime", e.target.value)}
-                  >
-                    <option value="">Select your response time</option>
-                    {selectOptions.responseTime.map((opt) => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
-                    ))}
-                  </select>
-                  {errors.responseTime && <p className={errorClasses}>{errors.responseTime}</p>}
-                </div>
-
-                <div>
-                  <label className={labelClasses}>Can you handle 40+ inbound inquiries per month?</label>
-                  <select
-                    className={inputClasses}
-                    value={formData.inquiryCapacity || ""}
-                    onChange={(e) => handleChange("inquiryCapacity", e.target.value)}
-                  >
-                    <option value="">Select your capacity</option>
-                    {selectOptions.inquiryCapacity.map((opt) => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
-                    ))}
-                  </select>
-                  {errors.inquiryCapacity && <p className={errorClasses}>{errors.inquiryCapacity}</p>}
-                </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              <div>
+                <label className={labelClasses}>Phone Number</label>
+                <input
+                  type="tel"
+                  placeholder="(416) 555-0100"
+                  className={inputClasses}
+                  value={formData.phone || ""}
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  maxLength={20}
+                />
+                {errors.phone && <p className={errorClasses}>{errors.phone}</p>}
+              </div>
+              <div>
+                <label className={labelClasses}>Mortgage Brokerage</label>
+                <input
+                  type="text"
+                  placeholder="Your brokerage name"
+                  className={inputClasses}
+                  value={formData.brokerage || ""}
+                  onChange={(e) => handleChange("brokerage", e.target.value)}
+                  maxLength={200}
+                />
+                {errors.brokerage && <p className={errorClasses}>{errors.brokerage}</p>}
               </div>
             </div>
 
+            <div>
+              <label className={labelClasses}>Deals Funded Per Month</label>
+              <select
+                className={inputClasses}
+                value={formData.dealsPerMonth || ""}
+                onChange={(e) => handleChange("dealsPerMonth", e.target.value)}
+              >
+                <option value="">Select your deal volume</option>
+                {dealOptions.map((opt) => (
+                  <option key={opt.value} value={opt.value}>{opt.label}</option>
+                ))}
+              </select>
+              {errors.dealsPerMonth && <p className={errorClasses}>{errors.dealsPerMonth}</p>}
+            </div>
+
+            <div>
+              <label className={labelClasses}>Current Lead Sources</label>
+              <textarea
+                placeholder="e.g. Referrals, realtor partnerships, past clients, online ads..."
+                className={`${inputClasses} min-h-[80px] resize-none`}
+                value={formData.leadSources || ""}
+                onChange={(e) => handleChange("leadSources", e.target.value)}
+                maxLength={500}
+              />
+              {errors.leadSources && <p className={errorClasses}>{errors.leadSources}</p>}
+            </div>
+
             <Button type="submit" variant="hero" size="lg" className="w-full text-base py-6">
-              Submit & Book Strategy Call
+              See If You Qualify
               <ArrowRight className="ml-1" />
             </Button>
 

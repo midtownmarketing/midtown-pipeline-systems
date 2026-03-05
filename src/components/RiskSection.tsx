@@ -11,15 +11,15 @@ const RiskSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="section-label mb-5">Zero Risk</p>
+          <p className="section-label mb-5">Structure</p>
           <h2 className="font-display text-section text-bright mb-6">
-            No Long-Term Contracts. Ever.
+            ROI-Backed. No Long-Term Contracts.
           </h2>
           <p className="text-secondary-foreground text-lg leading-relaxed max-w-lg mx-auto mb-4">
-            Month-to-month. No shared leads. Clear performance expectations from day one.
+            Month-to-month structure. No shared leads. No lock-in. The system pays for itself — or you walk. That's the discipline we operate with.
           </p>
           <p className="text-sm text-primary font-semibold">
-            Results within your agreement, or we refund your investment.
+            If the math doesn't work, we'll tell you before you spend a dollar.
           </p>
         </motion.div>
       </div>

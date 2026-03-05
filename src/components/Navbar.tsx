@@ -4,8 +4,8 @@ import { NavBar } from "@/components/ui/tubelight-navbar";
 const navItems = [
   { name: "Home", url: "#hero", icon: Home },
   { name: "Problem", url: "#problem", icon: AlertTriangle },
-  { name: "Services", url: "#solution", icon: Lightbulb },
-  { name: "Why Us", url: "#why", icon: Users },
+  { name: "System", url: "#solution", icon: Lightbulb },
+  { name: "Qualify", url: "#why", icon: Users },
   { name: "Process", url: "#process", icon: ClipboardList },
   { name: "Apply", url: "#qualify", icon: PhoneCall },
 ];

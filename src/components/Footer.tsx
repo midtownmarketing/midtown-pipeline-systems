@@ -8,7 +8,7 @@ const Footer = () => {
               Midtown<span className="text-primary">.</span>
             </p>
             <p className="text-sm text-muted-foreground mt-1">
-              Mortgage pipeline systems for Canadian brokers.
+              Mortgage pipeline systems for Ontario brokers.
             </p>
           </div>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
