@@ -6,6 +6,7 @@ import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ResponseSection from "@/components/ResponseSection";
 import WhyMidtownSection from "@/components/WhyMidtownSection";
+import SocialProofSection from "@/components/SocialProofSection";
 import RiskSection from "@/components/RiskSection";
 import ProcessSection from "@/components/ProcessSection";
 import PreQualificationForm from "@/components/PreQualificationForm";
@@ -36,6 +37,7 @@ const Index = () => {
       <SolutionSection />
       <ResponseSection />
       <div id="why"><WhyMidtownSection /></div>
+      <SocialProofSection />
       <RiskSection />
       <div id="process"><ProcessSection /></div>
       <PreQualificationForm />
