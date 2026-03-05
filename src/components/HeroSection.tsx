@@ -4,7 +4,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-[0.03]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none" />
 
