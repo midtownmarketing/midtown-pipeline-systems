@@ -18,10 +18,10 @@ const FinalCTASection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-section md:text-[3.5rem] text-bright mb-5">
-            Ready to Fill Your Pipeline?
+            Ready to Control Your Pipeline?
           </h2>
           <p className="text-secondary-foreground text-lg mb-12">
-            Book a free strategy call. We'll show you exactly how it works.
+            Apply for a strategy call. We'll assess your market, walk through the system, and determine if there's a fit.
           </p>
           <Button
             variant="hero"
@@ -29,7 +29,7 @@ const FinalCTASection = () => {
             className="text-base px-12 py-6"
             onClick={scrollToForm}
           >
-            Book Discovery Call
+            See If You Qualify
             <ArrowRight className="ml-1" />
           </Button>
         </motion.div>

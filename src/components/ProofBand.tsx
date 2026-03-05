@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "40–60", label: "Qualified Leads / Month" },
-  { value: "5-Min", label: "Automated Follow-Up" },
+  { value: "2–4", label: "Additional Funded Deals / Month" },
+  { value: "<5 Min", label: "Automated Lead Response" },
   { value: "100%", label: "Exclusive Leads" },
-  { value: "Full", label: "CRM Installed" },
+  { value: "Ontario", label: "Market-Specific Targeting" },
 ];
 
 const ProofBand = () => {

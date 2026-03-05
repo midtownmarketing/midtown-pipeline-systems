@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Strategy & Fit Review",
-    description: "We assess your market, capacity, and goals to determine fit.",
+    title: "Strategy & Fit Assessment",
+    description: "We evaluate your market, current volume, and capacity to determine if the system is a fit for your practice.",
   },
   {
     num: "02",
     title: "System Installation",
-    description: "Campaigns, automation, and CRM infrastructure built and configured.",
+    description: "Paid acquisition, automation, CRM, and follow-up workflows configured and deployed within your brokerage.",
   },
   {
     num: "03",
-    title: "Launch & Optimization",
-    description: "System goes live. Continuous optimization based on real performance data.",
+    title: "Launch & Continuous Optimization",
+    description: "System goes live. Performance is tracked against funded deal outcomes and optimized weekly.",
   },
 ];
 
@@ -56,7 +56,7 @@ const ProcessSection = () => {
                 <h3 className="text-lg font-bold text-bright mb-3">
                   {s.title}
                 </h3>
-                <p className="text-sm text-secondary-foreground leading-relaxed max-w-[240px] mx-auto">
+                <p className="text-sm text-secondary-foreground leading-relaxed max-w-[260px] mx-auto">
                   {s.description}
                 </p>
               </div>
