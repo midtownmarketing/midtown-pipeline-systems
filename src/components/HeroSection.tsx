@@ -1,12 +1,24 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import torontoSkyline from "@/assets/toronto-skyline.jpg";
 
 const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={torontoSkyline}
+          alt="Toronto financial district skyline"
+          className="w-full h-full object-cover object-center"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/40" />
+      </div>
+
       <div className="absolute inset-0 grid-pattern opacity-[0.03]" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 container max-w-5xl mx-auto px-6 text-center pt-20">
         <motion.div
